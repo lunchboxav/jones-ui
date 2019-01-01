@@ -7,7 +7,7 @@ import home from './pages/home';
 import playlists from './pages/playlists';
 import MainMenu from './components/MainMenu';
 import styled from 'styled-components'
-import { Flex, Box } from 'rebass'
+import { Flex, Box, Heading, Text } from 'rebass'
 
 const MenuContainer = styled(Box)({
   minHeight: '100vh'
@@ -21,15 +21,16 @@ class App extends Component {
         <Flex>
           <MenuContainer
             p={3}
-            width={1/5}
+            width={1/6}
             color='green'
             bg='lavender'>
-              <h1 className="App-title">Jones - Digital Signage CMS</h1>
+              <Heading textAlign='left' mb={-1} p={3}>Jones</Heading>
+              <Text textAlign='left' px={3} mb={4}>Digital Signage CMS</Text>
               <MainMenu />
           </MenuContainer>
           <Box
             p={3}
-            width={4/5}
+            width={5/6}
             color='green'
             bg='white'>
             <div>
